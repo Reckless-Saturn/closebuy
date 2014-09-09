@@ -3,11 +3,18 @@ Closebuy
 
 Closebuy, for selling and buying near you.
 
-## Team
+## Team (v1.0)
 
   - __Product Owner__: Dara Bun
   - __Scrum Master__: Tejaswini Pingili
   - __Development Team Members__: Lawrence Kang, Tyler Lewis
+
+## Team (v2.0)
+
+  - Eddie Jimenez (phoenix16t)
+  - Ly Mai Le (lmle)
+  - David Nguyen (blankmaker)
+  - Armando Perez (armandopmj)
 
 ## Table of Contents
 
