@@ -1,0 +1,10 @@
+2014-09-09 16:17:51.388 closebuy[5352:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-09 16:17:51.435 closebuy[5352:70b] Unlimited access to network resources
+2014-09-09 16:17:51.568 closebuy[5352:70b] [CDVTimer][keyboard] 0.082016ms
+2014-09-09 16:17:51.568 closebuy[5352:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-09-09 16:17:51.569 closebuy[5352:70b] [CDVTimer][statusbar] 0.400007ms
+2014-09-09 16:17:51.569 closebuy[5352:70b] [CDVTimer][TotalPluginStartup] 1.318991ms
+2014-09-09 16:17:51.763 closebuy[5352:70b] Resetting plugins due to page load.
+2014-09-09 16:17:52.382 closebuy[5352:70b] Finished load of: file:///Users/lymaile/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/E18618A1-9ADD-4C8E-97B1-3E1AC5AFFE6A/closebuy.app/www/index.html#/login
+2014-09-09 16:19:33.487 closebuy[5352:70b] contactSeller
+Terminating in response to SpringBoard's termination.

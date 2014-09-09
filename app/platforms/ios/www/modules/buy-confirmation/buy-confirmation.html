@@ -1,0 +1,14 @@
+<ion-view title="Buy Confirmation">
+  <ion-content class="has-header padding">
+    <div class="middle">
+      <div class="confirmPurchase" ng-show="!bought">
+        <div class="confirmHeading">Thanks for showing interest.</div>
+        <button class="button" ng-click="confirmPurchase()" ng-disabled="bought">Buy</button>
+        <button class="button" ng-click="contactSeller()" ng-disabled="bought">Contact Seller</button>
+      </div>
+      <div class="confirmHeading" ng-show="bought">
+        Thanks! The seller will contact you soon.
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
