@@ -1,8 +1,10 @@
 angular.module('buyconfirm', ['buybrowse.services'])
 
-.controller('ConfirmController', ['$scope', 'BuyItems', '$state', function($scope, BuyItems, $state) {
+.controller('ConfirmController', function($scope, $state, BuyItems, ContactSeller) {
+  
   $scope.bought = false;
   $scope.interestedItemId = BuyItems.interestedItemId;
+  
   $scope.confirmPurchase = function(){
     //mark the item as purchased
     BuyItems.markItemAsPurchased($scope.interestedItemId);
@@ -13,4 +15,7 @@ angular.module('buyconfirm', ['buybrowse.services'])
       $state.go('tab.buybrowse');
     }, 2000);
   };
-}]);
+
+  $scope.contactSeller = ContactSeller.contactSeller;
+
+});
