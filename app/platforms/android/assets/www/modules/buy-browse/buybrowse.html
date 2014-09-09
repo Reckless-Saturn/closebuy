@@ -1,0 +1,17 @@
+<ion-view title="Discover" ng-init="getItems()">
+  <ion-content class="has-header padding">
+  <div class="buyContainer">
+    <div class="item item-image" can-swipe="true">
+      <img src="{{currentItem.imgURL}}" class="buyImg" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
+    </div>
+    <div class="itemInfo">
+      <span>{{currentItem.description}}</span>
+      <p class="price">${{currentItem.price}}</p>
+    </div>
+    <div>
+      <i class="ion-close-circled swipeButtonLeft" ng-click="nextItem()"></i>
+      <i class="ion-checkmark-circled swipeButtonRight" ng-click="buyItem()"></i>
+    </div>
+  </div>
+  </ion-content>
+</ion-view>
