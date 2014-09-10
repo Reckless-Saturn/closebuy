@@ -1,0 +1,16 @@
+<ion-view title="Your Items" ng-init="getSellerItems()">
+  <ion-content class="has-header padding">
+    <div class="buyContainer">
+      
+    <div class="item item-image">
+      <img src="{{currentItem.imgURL}}" class="buyImg" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
+    </div>
+    <div class="itemInfo">
+      <span>{{currentItem.description}}</span>
+    </div>
+
+  </div>
+
+  </ion-content>
+</ion-view>
+      <!-- <p class="price">${{currentItem.price}}</p> -->
