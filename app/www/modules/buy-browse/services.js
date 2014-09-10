@@ -1,6 +1,6 @@
-angular.module('buybrowse.services', [])
+angular.module('buybrowse.services', ['ngCordova'])
 
-.factory('BuyItems',  function($q) {
+.factory('BuyItems', function($q) {
 
   //this variable stores the item's imageId that the user is interested in
   var interestedItemId = "";
@@ -78,4 +78,32 @@ angular.module('buybrowse.services', [])
     markItemAsPurchased: markItemAsPurchased,
     markItemAsSkipped: markItemAsSkipped
   }
-});
+})
+
+.factory('ContactSeller', function($cordovaSocialSharing) {
+  
+  var contactSeller = function(sellerPhoneNumber) {
+    console.log('contactSeller invoked');
+
+    var message = 'Hey, I\'m interested in your item on Closebuy.';
+    // todo:
+    // (1) Add sellerPhoneNumber field on user in database.
+    // (2) Update sellerPhoneNumber appropriately.
+    // (3) Test on actual phone.
+
+    $cordovaSocialSharing
+      .shareViaSMS(message, sellerPhoneNumber)
+      .then(function(result) {
+        // Success! 
+      }, function(err) {
+        // An error occured. Show a message to the user
+      });
+  };
+
+  return {
+    contactSeller: contactSeller
+  };
+
+})
+
+;
