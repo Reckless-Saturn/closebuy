@@ -55,3 +55,25 @@
   color: #fff;
   text-align: center;
 }
+
+/* buy-transaction */
+form.transaction input {
+  background-color:rgba(255,255,255,0.3);
+  width: 95%;
+  border-radius: 5px;
+}
+
+.list {
+  margin: 15px 0px;
+}
+
+.item {
+  border: 0px;
+}
+
+button.transaction {
+  width: 90%;
+  margin: 30px auto !important;
+  background-color: #ccd941 !important;
+  color: #454545 !important;
+}
