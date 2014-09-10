@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buythankyou', 'myAccount', 'ui.router']) 
+angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buytransaction', 'buythankyou', 'myAccount', 'ui.router']) 
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -92,6 +92,16 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
         'tab-buy': {
           templateUrl: "modules/buy-confirmation/buy-confirmation.html",
           controller: "ConfirmController"
+         }
+      }
+    })
+
+    .state('tab.buytransaction', {
+      url: "/buy/transaction",
+      views: {
+        'tab-buy': {
+          templateUrl: "modules/buy-transaction/buy-transaction.html",
+          controller: "TransactionController"
          }
       }
     })
