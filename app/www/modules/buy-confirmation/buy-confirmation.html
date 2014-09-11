@@ -3,13 +3,10 @@
     <div class="middle">
       <div class="confirmPurchase" ng-show="!bought">
         <div class="confirmHeading">Confirm your purchase</div>
-<<<<<<< HEAD
-        <button class="button" ng-click="transaction()" ng-disabled="bought">Buy</button>
-        <button class="button" ng-click="contactSeller()" ng-disabled="bought">Contact Seller</button>
-=======
+
         <button class="button" ng-click="confirmPurchase()" ng-disabled="bought">Buy</button>
         <button class="button" ng-click="contactSeller('5034282359')" ng-disabled="bought">Contact Seller</button>
->>>>>>> Debugged SMS added Parse Keys
+
       </div>
       <div class="confirmHeading" ng-show="bought">
         Thank you! <br /><br />
