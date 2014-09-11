@@ -4,24 +4,29 @@
   navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top">
-
-
-  <!-- Dashboard Tab -->
-  <ion-tab title="Dashboard" icon="icon ion-home" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
+  
+  <!-- "Discover" Tab -->
+  <ion-tab title="Discover" icon="icon ion-happy" href="#/tab/buy">
+    <ion-nav-view name="tab-buy"></ion-nav-view>
   </ion-tab>
 
-
-  <!-- Friends Tab -->
-  <ion-tab title="Friends" icon="icon ion-heart" href="#/tab/friends">
-    <ion-nav-view name="tab-friends"></ion-nav-view>
+  <!-- "Camera" tab is the first tab on the homescreen nav bar 
+  Note: This that the title is Sell, as you want to sell an item, but we 
+  route the user to the camera view.
+  -->
+  <ion-tab title="Sell" icon="icon ion-pricetags" href="#/tab/camera">
+    <ion-nav-view name="tab-camera"></ion-nav-view>
   </ion-tab>
-
-
-  <!-- Account Tab -->
-  <ion-tab title="Account" icon="icon ion-gear-b" href="#/tab/account">
-    <ion-nav-view name="tab-account"></ion-nav-view>
+  
+  <!-- This tab is hidden as there is a routing issue when this tab is deleted -->
+  <ion-tab title="Sell" class="hidden" icon="icon ion-pricetags" href="#/tab/sell">
+    <ion-nav-view name="tab-sell"></ion-nav-view>
   </ion-tab>
+  
 
+  <!-- Settings Tab -->
+  <ion-tab title="My Account" icon="icon ion-person" href="#/tab/myaccount">
+    <ion-nav-view name="tab-myAccount"></ion-nav-view>
+  </ion-tab>
 
 </ion-tabs>
