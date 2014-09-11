@@ -44,6 +44,8 @@ angular.module('login.services', [])
 
     var newUser = new Parse.User();
     newUser.set("username", user.username.toLowerCase());
+    newUser.set("email", user.email);
+    newUser.set("phone", user.phone);
     newUser.set("password", user.password);
     newUser.set("location", point);
     newUser.set("skippedImages", []);
