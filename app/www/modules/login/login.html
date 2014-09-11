@@ -5,6 +5,8 @@
       <h1 class="signupHeader">Sign Up</h1>
       <form class="signupNewUser" ng-if="newUser">
         <input class="newUsername" type="text" placeholder="Username" ng-model="newUser.username" ngRequired="true">
+        <input class="newEmail" type="text" placeholder="Email" ng-model="newUser.email" ngRequired="true">
+        <input class="newPhone" type="text" placeholder="Phone" ng-model="newUser.phone" ngRequired="true">
         <input class="newPassword" type="password" placeholder="Password" ng-model="newUser.password" ngRequired="true">
         <div class="signupButton" ng-click="signupUser()">Sign Up</div>
       </form>

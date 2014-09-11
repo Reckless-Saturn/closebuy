@@ -11,7 +11,7 @@ h1.signupHeader, h1.loginHeader {
   color: white;
 }
 
-input.existingUsername, input.newUsername, input.existingPassword, input.newPassword {
+input.existingUsername, input.newUsername, input.newEmail, input.newPhone, input.existingPassword, input.newPassword {
   margin-left: 20%;
   margin-top: 20px;
   width: 60%;
