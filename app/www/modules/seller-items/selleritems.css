@@ -1,57 +1,34 @@
+.sellerImageCrop {
+  margin-bottom: 10px
+}
+
 .buyContainer{
   color: #6b8665;
+  margin: 13px 10px 20px 10px;
+}
+
+.itemTitle {
   font-family: Helvetica;
-  margin: 13px 10px 10px 10px;
-}
-
-.buyImg {
-  max-width:100%;
-  max-height:auto;
-  border: 10px solid #c4f4f2;
-}
-
-.itemInfo {
-  margin-top: 15px;
-  text-align: center;
-  color: #454545;
-}
-
-.itemInfo span{
-  font-size: 1.4em;
-  color: #454545;
-}
-
-.price{
-  margin-top: 20px;
-  font-size: 3em;
   font-weight: bold;
-  color: #454545;
+  background: #c4f4f2;
+  text-align: left;
 }
 
-.swipeButtonLeft, .swipeButtonRight {
-  font-size: 8em;
-  color: #fff;
-  border-radius: 50%;
-  padding: 0 10px;
-  border: 10px solid #6FC6C3;
+.sellerItemInfo {
+  background: #c4f4f2;
+  text-align: left;
+  padding: 10px 0px 0px 10px;
 }
 
-.swipeButtonLeft {
-  float: left;
-  color: #f7e6e4;
-  background: #ea6060;
+.imageContainer {
+  height: 250px;
+  padding: 10px;
+  background: #c4f4f2;
 }
 
-.swipeButtonRight {
-  float: right;
-  color: #e3ffee;
-  background: #86d127;
+.sellerImg {
+  position: absolute;
+  display: block;
+  clip: rect(0px,260px,230px,0px);
 }
 
-.confirmHeading {
-  font-size: 4em;
-  line-height: 0.7em;
-  font-family: 'Damion', cursive;
-  color: #fff;
-  text-align: center;
-}
