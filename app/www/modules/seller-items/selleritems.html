@@ -1,16 +1,15 @@
 <ion-view title="Your Items" ng-init="getSellerItems()">
   <ion-content class="has-header padding">
-    <div class="buyContainer">
+    
+    <div class="buyContainer" ng-repeat="item in items">
+    <div class="item item-image sellerImageCrop" >
+      <div class="sellerItemInfo">
+        <span class="itemTitle">${{item.price}}: {{item.description}}</span>
+      </div>
       
-    <div class="item item-image">
-      <img src="{{currentItem.imgURL}}" class="buyImg" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
-    </div>
-    <div class="itemInfo">
-      <span>{{currentItem.description}}</span>
-    </div>
+      <div class="imageContainer"><img src="{{item.imgURL}}" class="sellerImg"></div>
 
+    </div>
   </div>
-
   </ion-content>
 </ion-view>
-      <!-- <p class="price">${{currentItem.price}}</p> -->
