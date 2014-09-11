@@ -7,7 +7,16 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!-- Logo Font -->
+    <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 
+    <!-- Custom CSS for each module -->
+    <link href="modules/login/login.css" rel="stylesheet">
+    <link href="modules/sellbuy-splash/sellbuy-splash.css" rel="stylesheet">
+    <link href="modules/camera-splash/camera-splash.css" rel="stylesheet">
+    <link href="modules/sell-description/sell.css" rel="stylesheet">
+    <link href="modules/buy-browse/buy.css" rel="stylesheet">
+    <link href="modules/myaccount/myaccount.css" rel="stylesheet">
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -15,22 +24,76 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <!-- ui-router loading -->
+    <script src="lib/ionic/js/angular-ui/angular-ui-router.js"></script>
+
+    <!-- ngCordova -->
+    <script src="lib/ng-cordova.js"></script>
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+
+    <!-- Parse -->
+    <!-- <script src="lib/parse/parse-1.2.19.js"></script> -->
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+
+    <!-- login controllers and services needed for login/signup -->
+    <script src="modules/login/controllers.js"></script>
+    <script src="modules/login/services.js"></script>
+    
+    <!-- sellbuy-splash controllers and services needed for screen immediately following login screen -->
+    <script src="modules/sellbuy-splash/services.js"></script>
+    <script src="modules/sellbuy-splash/controllers.js"></script>
+
+    <!-- sell services and controllers are shared by Sell Description and Sell Confirmation views.  Each of these is a separate module; the service is injected into the controller, and the controller is injected into the sell.js module -->
+    <script src="modules/sell-description/services.js"></script>
+    <script src="modules/sell-description/controllers.js"></script>
+
+    <!-- This controller and service is for the camera splash page.
+    The services file has a Camera factory which will be shared with sell-description -->
+    <script src="modules/camera-splash/controllers.js"></script>
+    <script src="modules/camera-splash/services.js"></script>
+
+    <!-- buy-browse controllers and services needed for buybrowse view -->
+    <script src="modules/buy-browse/controllers.js"></script>
+    <script src="modules/buy-browse/services.js"></script>
+    
+    <!-- buy-confirmation controller for the confirmation of buying an item -->
+    <script src="modules/buy-confirmation/controllers.js"></script>
+
+    <!-- buy thank you controller for thanking the user -->
+     <script src="modules/buy-thankyou/controllers.js"></script>
+
+    <!-- settings controllers and services -->
+    <script src="modules/myaccount/controllers.js"></script>
+    <script src="modules/myaccount/services.js"></script>
+
+    <!-- PARSE -->
+    <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+
+    <!-- Commented out for now so we can use the Parse database with users, items, photos, etc. -->
+    <script type="text/javascript">
+    //   var parseAPPID = "9Y6Y8st5F2hlY9C8EaAuSC6uzxonmVkUgK6CUJGW";
+    //   var parseJSID = "VQxaM26lNmiWirdttRurESuR0zzkY0CXQs19WInP";
+       
+    //   Parse.initialize(parseAPPID, parseJSID);
+    // </script>
   </head>
   <body ng-app="starter" animation="slide-left-right-ios7" class="platform-android platform-cordova platform-webview">
+    <!-- Initialize the Closebuy Parse database -->
+    <script> Parse.initialize('YcpDCcFalezHhs56HCT6tFJ8rtVmE2FZ8Chmi9W9', 'v1IVkdydnMhegLr0lulcY5fWNTM2zsnhdxFAobqW'); </script>
+
     <!-- 
       The nav bar that will be updated as we navigate between views.
     -->
     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-      <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+<!--       <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
         Back
-      </ion-nav-back-button>
+      </ion-nav-back-button> -->
     </ion-nav-bar>
     <!-- 
       The views will be rendered in the <ion-nav-view> directive below
