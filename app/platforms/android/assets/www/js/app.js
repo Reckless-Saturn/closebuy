@@ -1,4 +1,5 @@
-angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buythankyou', 'myAccount', 'ui.router']) 
+
+angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buytransaction', 'buythankyou', 'selleritems', 'myAccount', 'ui.router']) 
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -96,6 +97,16 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
       }
     })
 
+    .state('tab.buytransaction', {
+      url: "/buy/transaction",
+      views: {
+        'tab-buy': {
+          templateUrl: "modules/buy-transaction/buy-transaction.html",
+          controller: "TransactionController"
+         }
+      }
+    })
+
     .state('tab.buythankyou', {
       url: '/buy/confirmation/thanks',
       views: {
@@ -106,13 +117,23 @@ angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 
       }
     })
 
-    // routing for settings page
+    // routing for myAccount page
     .state('tab.myaccount', {
       url: '/myaccount',
       views: {
         'tab-myAccount': {
           templateUrl: 'modules/myaccount/myaccount.html',
           controller: 'MyAccountController'
+        }
+      }
+    })
+    // routing for NEW SELLER PAGE page
+    .state('tab.selleritems', {
+      url: '/selleritems',
+      views: {
+        'tab-sell': {
+          templateUrl: 'modules/seller-items/selleritems.html',
+          controller: 'SellerItemsController'
         }
       }
     });

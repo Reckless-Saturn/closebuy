@@ -163,12 +163,14 @@ C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\lib\ionic\scs
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-browse \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-confirmation \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-thankyou \
+C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-transaction \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\camera-splash \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\login \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\myaccount \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\sell-confirmation \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\sell-description \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\sellbuy-splash \
+C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\seller-items \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\tabs \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-browse\buy.css \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-browse\buybrowse.html \
@@ -178,6 +180,8 @@ C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-c
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-confirmation\controllers.js \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-thankyou\buy-thankyou.html \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-thankyou\controllers.js \
+C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-transaction\buy-transaction.html \
+C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\buy-transaction\controllers.js \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\camera-splash\camera-splash.css \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\camera-splash\camera-splash.html \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\camera-splash\controllers.js \
@@ -199,6 +203,10 @@ C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\sellb
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\sellbuy-splash\sellbuy-splash.css \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\sellbuy-splash\sellbuy-splash.html \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\sellbuy-splash\services.js \
+C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\seller-items\controllers.js \
+C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\seller-items\selleritems.css \
+C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\seller-items\selleritems.html \
+C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\seller-items\services.js \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\tabs\controllers.js \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\tabs\services.js \
 C:\Users\asus\Desktop\HR\closebuy\app\platforms\android\assets\www\modules\tabs\tabs.html \
