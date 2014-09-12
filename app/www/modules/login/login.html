@@ -8,7 +8,7 @@
         <input class="newPassword" type="password" placeholder="Password" ng-model="newUser.password" ngRequired="true">
         <div class="signupButton" ng-click="signupUser()">
           Sign Up
-          <i ng-show="loading.loading" class="ion-loading-c"></i>
+          <i ng-show="loading.signup" class="ion-loading-c"></i>
         </div>
       </form>
       <p class="loginQuestion">Already a member?   <span class="toggleView" ng-click="toggleView()">Log in</span></p>
@@ -21,7 +21,7 @@
         <input class="existingPassword" type="password" placeholder="Password" ng-model="existingUser.password" ngRequired="true">
         <div class="signupButton" ng-click="loginUser()">
           Log In
-          <i ng-show="loading.loading" class="ion-loading-c"></i>
+          <i ng-show="loading.login" class="ion-loading-c"></i>
         </div>
       </form>
       <p class="loginQuestion">Don't have an account?   <span class="toggleView" ng-click="toggleView()">Sign up</span></p>
