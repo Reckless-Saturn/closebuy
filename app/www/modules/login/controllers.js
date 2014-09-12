@@ -7,6 +7,9 @@ angular.module('login', ['login.services'])
 
   $scope.newUser = {};
 
+  $scope.loading = Auth.loading;
+  console.log('$scope.loading', $scope.loading);
+
   $scope.toggleView = function() {
     $scope.newUserBox = !$scope.newUserBox;
   };
