@@ -5,9 +5,46 @@
 }
 
 .buyImg {
-  max-width:100%;
-  max-height:auto;
+  max-width: auto;
+  max-height: auto;
   border: 10px solid #c4f4f2;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.face {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+
+  backface-visibility: hidden;
+}
+
+.face.back {
+  background-color: #c4f4f2;
+  position: absolute;
+  padding: 20px;
+  height: 90%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.flip {
+  transform: rotateY(180deg);
+
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+
+.flipback {
+  transform: rotateY(0deg);
+
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
 }
 
 .itemInfo {
