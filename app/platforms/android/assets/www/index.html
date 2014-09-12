@@ -10,6 +10,9 @@
     <!-- Logo Font -->
     <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 
+    <!-- PubNub Script -->
+    <script src="http://cdn.pubnub.com/pubnub.min.js"></script>
+
     <!-- Custom CSS for each module -->
     <link href="modules/login/login.css" rel="stylesheet">
     <link href="modules/sellbuy-splash/sellbuy-splash.css" rel="stylesheet">
@@ -17,6 +20,7 @@
     <link href="modules/sell-description/sell.css" rel="stylesheet">
     <link href="modules/buy-browse/buy.css" rel="stylesheet">
     <link href="modules/myaccount/myaccount.css" rel="stylesheet">
+    <link href="modules/seller-items/selleritems.css" rel="stylesheet">
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -68,25 +72,32 @@
     <!-- buy thank you controller for thanking the user -->
      <script src="modules/buy-thankyou/controllers.js"></script>
 
-    <!-- settings controllers and services -->
+    <!-- myAccount controllers and services -->
     <script src="modules/myaccount/controllers.js"></script>
     <script src="modules/myaccount/services.js"></script>
+
+    <!-- seller-items controllers and services -->
+    <script src="modules/seller-items/controllers.js"></script>
+    <script src="modules/seller-items/services.js"></script>
+
+    <!-- settings controllers and services -->
+    <script src="modules/buy-transaction/controllers.js"></script>
 
     <!-- PARSE -->
     <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
 
-    <!-- Commented out for now so we can use the Parse database with users, items, photos, etc. -->
+    <!-- Commented out for now so we can use the Parse database with users, items, photos, etc.
     <script type="text/javascript">
-    //   var parseAPPID = "9Y6Y8st5F2hlY9C8EaAuSC6uzxonmVkUgK6CUJGW";
-    //   var parseJSID = "VQxaM26lNmiWirdttRurESuR0zzkY0CXQs19WInP";
+      var parseAPPID = "9Y6Y8st5F2hlY9C8EaAuSC6uzxonmVkUgK6CUJGW";
+      var parseJSID = "VQxaM26lNmiWirdttRurESuR0zzkY0CXQs19WInP";
        
-    //   Parse.initialize(parseAPPID, parseJSID);
-    // </script>
+      Parse.initialize(parseAPPID, parseJSID);
+  </script> -->
   </head>
   <body ng-app="starter" animation="slide-left-right-ios7" class="platform-android platform-cordova platform-webview">
     <!-- Initialize the Closebuy Parse database -->
-    <script> Parse.initialize('YcpDCcFalezHhs56HCT6tFJ8rtVmE2FZ8Chmi9W9', 'v1IVkdydnMhegLr0lulcY5fWNTM2zsnhdxFAobqW'); </script>
 
+    <script> Parse.initialize('YcpDCcFalezHhs56HCT6tFJ8rtVmE2FZ8Chmi9W9', 'v1IVkdydnMhegLr0lulcY5fWNTM2zsnhdxFAobqW'); </script>
     <!-- 
       The nav bar that will be updated as we navigate between views.
     -->
