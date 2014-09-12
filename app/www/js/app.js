@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 angular.module('starter', ['ionic', 'login', 'sellbuy', 'sell', 'camerasplash', 'buybrowse', 'buyconfirm', 'buytransaction', 'buythankyou', 'selleritems', 'myAccount', 'ui.router']) 
 
 .run(function($ionicPlatform) {
