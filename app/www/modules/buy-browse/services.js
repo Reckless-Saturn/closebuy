@@ -49,8 +49,6 @@ angular.module('buybrowse.services', ['ngCordova'])
     var query = new Parse.Query('Items');
     //return only those fields back
     query.select("userId", "imgURL", "price", "description", "objectID", "location");
-    //exclude records belonging to the logged-in user(his/her own items)
-    query.notEqualTo("userId", Parse.User.current().id);
     //exclude already purchased items
     query.notEqualTo("purchased", true);
     //exclude the items which the user has skipped
