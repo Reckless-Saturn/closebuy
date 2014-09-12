@@ -9,11 +9,10 @@ angular.module('selleritems', [])
     //once items are back, then do the following
     promise.then(function(items){
       //set the scope.items to the items retrieved
-      $scope.items = items;
+      var userId = Parse.User.current().id;
+      var sellerItems = items.filter(function(item) { return item.userId === userId; });
+      $scope.items = sellerItems;
       $scope.itemIndex = 0;
-      console.log($scope.items);
-      //display the first item
-      $scope.currentItem = $scope.items[$scope.itemIndex];
     }, function(err){
       console.log("error retrieving items");
     });  
