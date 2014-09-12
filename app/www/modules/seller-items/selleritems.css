@@ -1,7 +1,3 @@
-.sellerImageCrop {
-  margin-bottom: 10px
-}
-
 .buyContainer{
   color: #6b8665;
   margin: 13px 10px 20px 10px;
@@ -10,8 +6,8 @@
 .itemTitle {
   font-family: Helvetica;
   font-weight: bold;
-  background: #c4f4f2;
   text-align: left;
+  color: #444;
 }
 
 .sellerItemInfo {
@@ -21,14 +17,13 @@
 }
 
 .imageContainer {
-  height: 250px;
   padding: 10px;
   background: #c4f4f2;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .sellerImg {
-  position: absolute;
   display: block;
-  clip: rect(0px,260px,230px,0px);
 }
 

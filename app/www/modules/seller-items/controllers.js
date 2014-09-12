@@ -44,6 +44,5 @@ angular.module('selleritems', [])
       console.log("error retrieving items");
     });  
   };
-
   
 });
