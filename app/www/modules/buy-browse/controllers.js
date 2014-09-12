@@ -35,10 +35,6 @@ angular.module('buybrowse', ['buybrowse.services'])
     $state.go('tab.buyconfirmation');
   };
 
-  $scope.onTap = function() {
-    $scope.front = !$scope.front;
-  }
-
   //show them the next item, same as swiping left
   $scope.nextItem = function(){
     $scope.onSwipeLeft();

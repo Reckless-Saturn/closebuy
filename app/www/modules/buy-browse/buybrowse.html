@@ -1,22 +1,9 @@
 <ion-view title="Discover" ng-init="getItems()">
   <ion-content class="has-header padding">
   <div class="buyContainer">
-    <div class="imageContainer">
-      <div class="face item item-image" can-swipe="true" ng-class="{true: 'flip', false: 'flipback'}[front]" on-tap="onTap()">
-
-        <img src="{{currentItem.imgURL}}" class="buyImg" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
-
-      </div>
-      <div class='face back flip' ng-class="{true: 'flipback', false: 'flip'}[front]" on-tap="onTap()">
-          <h1>More info</h1>
-          <p><b>Seller name</b>: Mai Perez</p>
-          <p><b>Seller phone</b>: 555-555-5555</p>
-          <p><b>Seller email</b>: lusciousmai@hotmail.com</p>
-          <p><b>Item description:</b>: </p>
-          <p>Info info info info info info info info info info info info info info info info info info info info info info info info info info info info</p>
-      </div>
+    <div class="item item-image" can-swipe="true">
+      <img src="{{currentItem.imgURL}}" class="buyImg" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
     </div>
-
     <div class="itemInfo">
       <span>{{currentItem.description}}</span>
       <p class="price">${{currentItem.price}}</p>
